@@ -1,0 +1,95 @@
+#main-container{
+  background-color:#e0e0e0}
+#gallery-card {
+  height: 24rem; 
+  width: 14rem;
+  margin: 1rem;
+}
+
+
+  
+
+#card-para{
+ font-size: 1rem;
+ font-weight: 700;
+}
+ .gallery-col {
+  margin-bottom: 1rem;
+}
+
+.gallery-col:hover {
+  background-color: #f9f9f9;
+}
+
+.dragging {
+  background-color: #e0e0e0;
+} 
+.card-image {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.card-title {
+  color:black;
+  text-align: right; /* Align the text to the right */
+  
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+#loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #0077cc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .gallery-col {
+    width: 100%; /* Make the columns take full width on smaller screens */
+    margin-bottom: 1rem;
+  }
+
+  .card-image {
+    height: 10rem; /* Adjust the height of the image for smaller screens */
+    object-fit: cover;
+  }
+  #gallery-card {
+  height: 13rem; 
+  width: 7rem;
+  margin: 1rem;
+}
+}
+
+.btn-no-active {
+  transition: none !important;
+}
+
+
+
+
+
+
+
+
+
